@@ -24,11 +24,10 @@ def get_time(host, port):
 
 
 if __name__ == "__main__":
+    port = 37
     if sys.argv[1:]:
         host = sys.argv[1]
-        port = 37
     else:
         host = "127.0.0.1"
-        port = 8037
     t = get_time(host, port)
     print("Server time is", time.ctime(t))
